@@ -1,34 +1,26 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Order",
+  "description": "An order placed by a customer for a product",
   "type": "object",
   "properties": {
-    "customer_name": {
+    "id": {
+      "description": "The unique identifier for the order",
       "type": "string"
     },
-    "products": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "productName": {"type": "string"},
-          "quantity": {
-            "type": "integer",
-            "minimum": 1
-          }
-        },
-        "required": ["productName", "quantity"]
-      }
+    "customerId": {
+      "description": "The unique identifier for the customer placing the order",
+      "type": "string"
     },
-    "totalCost": {
-      "type": "number",
-      "minimum": 0
+    "productId": {
+      "description": "The unique identifier for the product ordered",
+      "type": "string"
     },
-    "orderStatus": {
-      "type": "string",
-      "enum": ["pending", "completed", "cancelled"]
+    "quantity": {
+      "description": "The quantity of the product ordered",
+      "type": "integer",
+      "minimum": 1
     }
   },
-  "required": ["customer_name", "products", "totalCost", "orderStatus"],
-  "additionalProperties": false
+  "required": ["id", "customerId", "productId", "quantity"]
 }
