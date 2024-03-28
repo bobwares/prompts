@@ -1,0 +1,29 @@
+### Create a new order
+POST http://localhost:8080/api/orders
+Content-Type: application/json
+
+{
+  "id": "order4",
+  "customerId": "1",
+  "productId": "2",
+  "quantity": 4
+}
+
+### Get all orders
+GET http://localhost:8080/api/orders
+
+### Get a specific order by ID
+GET http://localhost:8080/api/orders/order1
+
+### Update an order
+PUT http://localhost:8080/api/orders/order1
+Content-Type: application/json
+
+{
+  "customerId": "1",
+  "productId": "1",
+  "quantity": 5
+}
+
+### Delete an order
+DELETE http://localhost:8080/api/orders/order1

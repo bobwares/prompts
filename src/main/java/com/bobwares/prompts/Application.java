@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableJpaRepositories(basePackages = "com.bobwares.prompts")
-@EntityScan("com.bobwares.prompts.domain")
+@EntityScan("com.bobwares.prompts.entity")
 @SpringBootApplication
-public class PromptsApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PromptsApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.bobwares.prompts.repository;
 
-import com.bobwares.prompts.domain.Product;
+import com.bobwares.prompts.entity.Product;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

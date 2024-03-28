@@ -1,4 +1,4 @@
-package com.bobwares.prompts.domain;
+package com.bobwares.prompts.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

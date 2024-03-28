@@ -1,6 +1,3 @@
-CREATE TABLE CUSTOMER (
-                          ID INT AUTO_INCREMENT PRIMARY KEY,
-                          NAME VARCHAR(255) NOT NULL,
-                          EMAIL VARCHAR(255) NOT NULL,
-                          ADDRESS VARCHAR(255)
-);
+INSERT INTO customer (name, email, address) VALUES
+                                                ('John Doe', 'john.doe@example.com', '123 Main St'),
+                                                ('Jane Smith', 'jane.smith@example.com', '456 Elm St');
